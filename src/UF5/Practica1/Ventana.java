@@ -27,7 +27,9 @@ public class Ventana extends JFrame {
         //Boton2
         JButton boton2 = new JButton();
         boton2.setBounds(100,200,100,40);
-        boton2.setBackground(Color.BLUE);
+        ImageIcon click = new ImageIcon("h.png");
+        boton2.setIcon(new ImageIcon(click.getImage().getScaledInstance(boton2.getWidth(),boton2.getHeight(),Image.SCALE_SMOOTH)));
+
         panel.add(boton2);
     }
 
